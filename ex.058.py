@@ -4,7 +4,8 @@ from random import randint
 computador = randint(0,5)
 palpite = int(input("Qual número você acha que eu escolhi? "))
 while palpite != computador:
-    palpite = input('Errou. Tente outra vez: ')
+    palpite = int(input('Errou. Tente outra vez: '))
     if palpite == computador:
         print('Eu escolhi {} e você acertou!'.format(computador))
 print('Parabéns!')
+
